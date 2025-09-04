@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Comunidad Teto-nes</title>
+
+    <!-- Fuente más moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121212;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #1f1f1f;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav li {
+            display: inline;
+        }
+
+        nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            background: linear-gradient(135deg, #34495e, #2c3e50);
+            border-radius: 12px;
+            color: #ffffff !important;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+        }
+
+        nav a:hover {
+            transform: translateY(-2px);
+            background: linear-gradient(135deg, #1abc9c, #16a085);
+            box-shadow: 0 6px 20px rgba(26, 188, 156, 0.3);
+            color: #ffffff !important;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 100px auto 40px auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            color: #1abc9c;
+            border-bottom: 2px solid #1abc9c;
+            padding-bottom: 5px;
+        }
+
+        a {
+            color: #4fc3f7;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            max-width: 300px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            display: inline-block;
+        }
+        
+        #imagenes {
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 315px;
+            margin-top: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            font-size: 0.9em;
+            color: #ccc;
+        }
+
+        /* Estilos para el enlace de Discord */
+        .discord-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 20px;
+            background: linear-gradient(135deg, #5865F2, #7289DA);
+            border-radius: 12px;
+            color: white !important;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(88, 101, 242, 0.3);
+        }
+
+        .discord-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(88, 101, 242, 0.4);
+            text-decoration: none;
+        }
+
+        .discord-icon {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        /* Estilos para el enlace de TikTok */
+        .tiktok-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 20px;
+            background: linear-gradient(135deg, #ff0050, #000000);
+            border-radius: 12px;
+            color: white !important;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 0, 80, 0.3);
+        }
+
+        .tiktok-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 0, 80, 0.4);
+            text-decoration: none;
+        }
+
+        .tiktok-icon {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        #enlaces ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #enlaces li {
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🌐 Página de la comunidad</h1>
+        <p>Bienvenido, aquí puedes encontrar momentos destacados o cosas relacionadas a la comunidad</p>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+      <ul>
+        <li><a href="#enlaces">📌 Enlaces</a></li>
+        <li><a href="#imagenes">🖼️ Imágenes</a></li>
+        <li><a href="#redes">🎥 Videos</a></li>
+        <li><a href="#notas">📝 Notas</a></li>
+      </ul>
+    </nav>
+
+    <main>
+        <section id="enlaces">
+            <h2>📌 Enlaces</h2>
+            <ul>
+                <li>
+                    <a href="https://discord.gg/Y6V5bCSkZ9" target="_blank" rel="noopener noreferrer" class="discord-link">
+                        <svg class="discord-icon" viewBox="0 0 24 24">
+                            <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419-.0190 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9460 2.4189-2.1568 2.4189z"/>
+                        </svg>
+                        Únete a nuestro Discord
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/@mioxc39s" target="_blank" rel="noopener noreferrer" class="tiktok-link">
+                        <svg class="tiktok-icon" viewBox="0 0 24 24">
+                            <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-.88-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+                        </svg>
+                        Síguenos en TikTok
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="imagenes">
+            <h2>🖼️ Imágenes xd</h2>
+            <img src="assets/meowlbase.jpeg" alt="Primera imagen">
+            <img src="assets/meowlinteligente.jpeg" alt="Segunda imagen">
+        </section>
+
+        <section id="redes">
+            <h2>🎥 Videos</h2>
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@mioxc39s/video/7545743477385055494" data-video-id="7545743477385055494" style="max-width: 605px;min-width: 325px;" > 
+                <section> 
+                    <a target="_blank" title="@mioxc39s" href="https://www.tiktok.com/@mioxc39s?refer=embed">@mioxc39s</a> 
+                    <p></p> 
+                    <a target="_blank" title="♬ sonido original - mioxc39s" href="https://www.tiktok.com/music/sonido-original-7545743477381120774?refer=embed">♬ sonido original - mioxc39s</a> 
+                </section> 
+            </blockquote> 
+            <script async src="https://www.tiktok.com/embed.js"></script>
+        </section>
+
+        <section id="notas">
+            <h2>📝 Notas</h2>
+            <p>Miércoles 3 de septiembre comencé a crear la página, pensando qué más agregar.</p>
+            <p>Borré la cuenta.</p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Mi Blog Personal - Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>
